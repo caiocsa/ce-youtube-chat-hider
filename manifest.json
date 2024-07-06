@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Chat Hider",
+  "version": "1.0",
+  "description": "by CZAR",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
